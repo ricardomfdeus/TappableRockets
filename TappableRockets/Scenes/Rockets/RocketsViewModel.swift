@@ -13,13 +13,20 @@ protocol RocketsListViewModelProtocol {
 }
 
 class RocketsViewModel {
+    
+    var rockets: Rockets? {
+        didSet {
+            view.viewWillUpdateRockets()
+        }
+    }
+    
     var view: RocketsViewProtocol!
     
     func fetchRocketData() {
         RocketsRemoteRepository.fetchRockets { [weak self] (result) in
             switch result {
             case .success(let rockets):
-                self?.view.viewWillPresent(data: rockets)
+                self?.rockets = rockets
             case .failure(let error):
                 self?.view.viewDidFailToFetchData(with: error)
             }
