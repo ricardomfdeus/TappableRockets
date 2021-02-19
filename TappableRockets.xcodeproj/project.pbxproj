@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5A0067BA25E046EA00F2BC80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0067B925E046EA00F2BC80 /* AppDelegate.swift */; };
+		5A0067BC25E046EA00F2BC80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0067BB25E046EA00F2BC80 /* SceneDelegate.swift */; };
+		5A0067C125E046EA00F2BC80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0067BF25E046EA00F2BC80 /* Main.storyboard */; };
+		5A0067C425E046EA00F2BC80 /* TappableRockets.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A0067C225E046EA00F2BC80 /* TappableRockets.xcdatamodeld */; };
+		5A0067C625E046EC00F2BC80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0067C525E046EC00F2BC80 /* Assets.xcassets */; };
+		5A0067C925E046EC00F2BC80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0067C725E046EC00F2BC80 /* LaunchScreen.storyboard */; };
+		5A1DB21925E0544B0078C40E /* RocketsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1DB21825E0544B0078C40E /* RocketsModels.swift */; };
+		5A1DB22225E055260078C40E /* RocketsRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1DB22125E055260078C40E /* RocketsRemoteRepository.swift */; };
+		5A1DB22625E05BAD0078C40E /* RocketsStorageRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1DB22525E05BAD0078C40E /* RocketsStorageRepository.swift */; };
+		5AB28A1425E04AD500564E25 /* RocketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB28A1025E04AD500564E25 /* RocketsViewController.swift */; };
+		5AB28A1525E04AD500564E25 /* RocketsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB28A1125E04AD500564E25 /* RocketsViewModel.swift */; };
+		D97FF503683779263C8A3B32 /* Pods_TappableRockets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E61A55FD6BC1261EABD584 /* Pods_TappableRockets.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5A0067B625E046EA00F2BC80 /* TappableRockets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TappableRockets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A0067B925E046EA00F2BC80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5A0067BB25E046EA00F2BC80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5A0067C025E046EA00F2BC80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5A0067C325E046EA00F2BC80 /* TappableRockets.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TappableRockets.xcdatamodel; sourceTree = "<group>"; };
+		5A0067C525E046EC00F2BC80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5A0067C825E046EC00F2BC80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5A0067CA25E046EC00F2BC80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A1DB21825E0544B0078C40E /* RocketsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsModels.swift; sourceTree = "<group>"; };
+		5A1DB22125E055260078C40E /* RocketsRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsRemoteRepository.swift; sourceTree = "<group>"; };
+		5A1DB22525E05BAD0078C40E /* RocketsStorageRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsStorageRepository.swift; sourceTree = "<group>"; };
+		5AB28A1025E04AD500564E25 /* RocketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsViewController.swift; sourceTree = "<group>"; };
+		5AB28A1125E04AD500564E25 /* RocketsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsViewModel.swift; sourceTree = "<group>"; };
+		82E61A55FD6BC1261EABD584 /* Pods_TappableRockets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TappableRockets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96D03B33E26C4ED80B4E4B5F /* Pods-TappableRockets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TappableRockets.release.xcconfig"; path = "Target Support Files/Pods-TappableRockets/Pods-TappableRockets.release.xcconfig"; sourceTree = "<group>"; };
+		C6A42F3877CB7974DAA09D16 /* Pods-TappableRockets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TappableRockets.debug.xcconfig"; path = "Target Support Files/Pods-TappableRockets/Pods-TappableRockets.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5A0067B325E046EA00F2BC80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97FF503683779263C8A3B32 /* Pods_TappableRockets.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A0067AD25E046EA00F2BC80 = {
+			isa = PBXGroup;
+			children = (
+				5A0067B825E046EA00F2BC80 /* TappableRockets */,
+				5A0067B725E046EA00F2BC80 /* Products */,
+				DB3C4CAC03155FE66703F584 /* Pods */,
+				6BC9108443B13CC5D62EE76C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5A0067B725E046EA00F2BC80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5A0067B625E046EA00F2BC80 /* TappableRockets.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5A0067B825E046EA00F2BC80 /* TappableRockets */ = {
+			isa = PBXGroup;
+			children = (
+				5A1DB21325E04F410078C40E /* Repository */,
+				5AB28A0E25E04AB800564E25 /* Scenes */,
+				5A0067B925E046EA00F2BC80 /* AppDelegate.swift */,
+				5A0067BB25E046EA00F2BC80 /* SceneDelegate.swift */,
+				5A0067BF25E046EA00F2BC80 /* Main.storyboard */,
+				5A0067C525E046EC00F2BC80 /* Assets.xcassets */,
+				5A0067C725E046EC00F2BC80 /* LaunchScreen.storyboard */,
+				5A0067CA25E046EC00F2BC80 /* Info.plist */,
+				5A0067C225E046EA00F2BC80 /* TappableRockets.xcdatamodeld */,
+			);
+			path = TappableRockets;
+			sourceTree = "<group>";
+		};
+		5A1DB21325E04F410078C40E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				5A1DB22125E055260078C40E /* RocketsRemoteRepository.swift */,
+				5A1DB22525E05BAD0078C40E /* RocketsStorageRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		5AB28A0E25E04AB800564E25 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5AB28A0F25E04ABE00564E25 /* Rockets */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5AB28A0F25E04ABE00564E25 /* Rockets */ = {
+			isa = PBXGroup;
+			children = (
+				5A1DB21825E0544B0078C40E /* RocketsModels.swift */,
+				5AB28A1025E04AD500564E25 /* RocketsViewController.swift */,
+				5AB28A1125E04AD500564E25 /* RocketsViewModel.swift */,
+			);
+			path = Rockets;
+			sourceTree = "<group>";
+		};
+		6BC9108443B13CC5D62EE76C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82E61A55FD6BC1261EABD584 /* Pods_TappableRockets.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB3C4CAC03155FE66703F584 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6A42F3877CB7974DAA09D16 /* Pods-TappableRockets.debug.xcconfig */,
+				96D03B33E26C4ED80B4E4B5F /* Pods-TappableRockets.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5A0067B525E046EA00F2BC80 /* TappableRockets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A0067CD25E046EC00F2BC80 /* Build configuration list for PBXNativeTarget "TappableRockets" */;
+			buildPhases = (
+				DF50C03271749302217977BA /* [CP] Check Pods Manifest.lock */,
+				5A0067B225E046EA00F2BC80 /* Sources */,
+				5A0067B325E046EA00F2BC80 /* Frameworks */,
+				5A0067B425E046EA00F2BC80 /* Resources */,
+				FE18134B4F22DCF49C4F037D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TappableRockets;
+			productName = TappableRockets;
+			productReference = 5A0067B625E046EA00F2BC80 /* TappableRockets.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5A0067AE25E046EA00F2BC80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					5A0067B525E046EA00F2BC80 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 5A0067B125E046EA00F2BC80 /* Build configuration list for PBXProject "TappableRockets" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5A0067AD25E046EA00F2BC80;
+			productRefGroup = 5A0067B725E046EA00F2BC80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5A0067B525E046EA00F2BC80 /* TappableRockets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5A0067B425E046EA00F2BC80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A0067C925E046EC00F2BC80 /* LaunchScreen.storyboard in Resources */,
+				5A0067C625E046EC00F2BC80 /* Assets.xcassets in Resources */,
+				5A0067C125E046EA00F2BC80 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DF50C03271749302217977BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TappableRockets-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE18134B4F22DCF49C4F037D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TappableRockets/Pods-TappableRockets-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TappableRockets/Pods-TappableRockets-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TappableRockets/Pods-TappableRockets-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5A0067B225E046EA00F2BC80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AB28A1525E04AD500564E25 /* RocketsViewModel.swift in Sources */,
+				5A0067C425E046EA00F2BC80 /* TappableRockets.xcdatamodeld in Sources */,
+				5A0067BA25E046EA00F2BC80 /* AppDelegate.swift in Sources */,
+				5A1DB21925E0544B0078C40E /* RocketsModels.swift in Sources */,
+				5A0067BC25E046EA00F2BC80 /* SceneDelegate.swift in Sources */,
+				5A1DB22225E055260078C40E /* RocketsRemoteRepository.swift in Sources */,
+				5AB28A1425E04AD500564E25 /* RocketsViewController.swift in Sources */,
+				5A1DB22625E05BAD0078C40E /* RocketsStorageRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5A0067BF25E046EA00F2BC80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A0067C025E046EA00F2BC80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5A0067C725E046EC00F2BC80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5A0067C825E046EC00F2BC80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5A0067CB25E046EC00F2BC80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A0067CC25E046EC00F2BC80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5A0067CE25E046EC00F2BC80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6A42F3877CB7974DAA09D16 /* Pods-TappableRockets.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44WG8C69B7;
+				INFOPLIST_FILE = TappableRockets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pt.ricardodeus.TappableRockets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A0067CF25E046EC00F2BC80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96D03B33E26C4ED80B4E4B5F /* Pods-TappableRockets.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44WG8C69B7;
+				INFOPLIST_FILE = TappableRockets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pt.ricardodeus.TappableRockets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5A0067B125E046EA00F2BC80 /* Build configuration list for PBXProject "TappableRockets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A0067CB25E046EC00F2BC80 /* Debug */,
+				5A0067CC25E046EC00F2BC80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A0067CD25E046EC00F2BC80 /* Build configuration list for PBXNativeTarget "TappableRockets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A0067CE25E046EC00F2BC80 /* Debug */,
+				5A0067CF25E046EC00F2BC80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5A0067C225E046EA00F2BC80 /* TappableRockets.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5A0067C325E046EA00F2BC80 /* TappableRockets.xcdatamodel */,
+			);
+			currentVersion = 5A0067C325E046EA00F2BC80 /* TappableRockets.xcdatamodel */;
+			path = TappableRockets.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5A0067AE25E046EA00F2BC80 /* Project object */;
+}
