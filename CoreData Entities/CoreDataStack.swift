@@ -21,6 +21,9 @@ final class CoreDataStack: NSObject {
          error conditions that could cause the creation of the store to fail.
          */
         let container = NSPersistentContainer(name: "TappableRockets")
+        
+        container.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+        
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.

@@ -5,12 +5,17 @@
         <attribute name="costPerLaunch" optional="YES" attributeType="String"/>
         <attribute name="country" optional="YES" attributeType="String"/>
         <attribute name="firstFlight" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="id" attributeType="String"/>
         <attribute name="imageUrl" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="rocketDescription" optional="YES" attributeType="String"/>
         <attribute name="successRate" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="wikipedia" optional="YES" attributeType="String"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <elements>
         <element name="RocketEntity" positionX="-63" positionY="-18" width="128" height="193"/>

@@ -12,18 +12,21 @@ public final class RocketsStorageRepository {
     private static var fetchedhResultController: NSFetchedResultsController<NSFetchRequestResult> = {
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: String(describing: RocketEntity.self))
         
-        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "author", ascending: true)]
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
         
-        let frc = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: CoreDataStack.sharedInstance.persistentContainer.viewContext, sectionNameKeyPath: nil, cacheName: nil)
+        let frc = NSFetchedResultsController(fetchRequest: fetchRequest,
+                                             managedObjectContext: CoreDataStack.sharedInstance.persistentContainer.viewContext,
+                                             sectionNameKeyPath: nil,
+                                             cacheName: nil)
         // frc.delegate = self
         return frc
     }()
-
+    
     public static func fetchRockets() throws -> [RocketItem] {
         do {
             try self.fetchedhResultController.performFetch()
             
-            if let rocketEntities = self.fetchedhResultController.sections?[0] as? [RocketEntity] {
+            if let rocketEntities = self.fetchedhResultController.sections?[0].objects as? [RocketEntity] {
                 return rocketEntities.asRocketItems()
             } else {
                 throw RocketsErrors.unknown
@@ -42,7 +45,7 @@ public final class RocketsStorageRepository {
             throw error
         }
     }
-
+    
 }
 
 internal extension RocketItem {
