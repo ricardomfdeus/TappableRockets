@@ -25,6 +25,9 @@
 		5A43697E25E14E3A0025342F /* RocketsRepositoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43697D25E14E3A0025342F /* RocketsRepositoryManager.swift */; };
 		5A43698325E158990025342F /* String+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43698225E158990025342F /* String+Date.swift */; };
 		5A43698625E158B60025342F /* Int+Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43698525E158B60025342F /* Int+Currency.swift */; };
+		5A43698C25E168230025342F /* View+Rounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43698B25E168230025342F /* View+Rounding.swift */; };
+		5A43698F25E169120025342F /* UIImageView+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43698E25E169120025342F /* UIImageView+Cache.swift */; };
+		5A43699525E181190025342F /* RocketsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43699425E181190025342F /* RocketsProtocols.swift */; };
 		5AB28A1425E04AD500564E25 /* RocketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB28A1025E04AD500564E25 /* RocketsViewController.swift */; };
 		5AB28A1525E04AD500564E25 /* RocketsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB28A1125E04AD500564E25 /* RocketsViewModel.swift */; };
 		5AF0889A25E06BD600944EDD /* UICollectionView+Dequeing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF0889925E06BD600944EDD /* UICollectionView+Dequeing.swift */; };
@@ -53,6 +56,9 @@
 		5A43697D25E14E3A0025342F /* RocketsRepositoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsRepositoryManager.swift; sourceTree = "<group>"; };
 		5A43698225E158990025342F /* String+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Date.swift"; sourceTree = "<group>"; };
 		5A43698525E158B60025342F /* Int+Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Currency.swift"; sourceTree = "<group>"; };
+		5A43698B25E168230025342F /* View+Rounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Rounding.swift"; sourceTree = "<group>"; };
+		5A43698E25E169120025342F /* UIImageView+Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Cache.swift"; sourceTree = "<group>"; };
+		5A43699425E181190025342F /* RocketsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsProtocols.swift; sourceTree = "<group>"; };
 		5AB28A1025E04AD500564E25 /* RocketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsViewController.swift; sourceTree = "<group>"; };
 		5AB28A1125E04AD500564E25 /* RocketsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsViewModel.swift; sourceTree = "<group>"; };
 		5AF0889925E06BD600944EDD /* UICollectionView+Dequeing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Dequeing.swift"; sourceTree = "<group>"; };
@@ -164,6 +170,7 @@
 				5AB28A1025E04AD500564E25 /* RocketsViewController.swift */,
 				5AB28A1125E04AD500564E25 /* RocketsViewModel.swift */,
 				5AF0889C25E073AD00944EDD /* RocketsCollectionViewDataSource.swift */,
+				5A43699425E181190025342F /* RocketsProtocols.swift */,
 			);
 			path = Rockets;
 			sourceTree = "<group>";
@@ -182,6 +189,8 @@
 				5AF0889925E06BD600944EDD /* UICollectionView+Dequeing.swift */,
 				5A43698225E158990025342F /* String+Date.swift */,
 				5A43698525E158B60025342F /* Int+Currency.swift */,
+				5A43698B25E168230025342F /* View+Rounding.swift */,
+				5A43698E25E169120025342F /* UIImageView+Cache.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -323,9 +332,12 @@
 				5AB28A1525E04AD500564E25 /* RocketsViewModel.swift in Sources */,
 				5A0067C425E046EA00F2BC80 /* TappableRockets.xcdatamodeld in Sources */,
 				5A0067BA25E046EA00F2BC80 /* AppDelegate.swift in Sources */,
+				5A43699525E181190025342F /* RocketsProtocols.swift in Sources */,
 				5AF0889D25E073AD00944EDD /* RocketsCollectionViewDataSource.swift in Sources */,
 				5A1DB21925E0544B0078C40E /* APIModels.swift in Sources */,
+				5A43698C25E168230025342F /* View+Rounding.swift in Sources */,
 				5A43696725E08C490025342F /* DomainModels.swift in Sources */,
+				5A43698F25E169120025342F /* UIImageView+Cache.swift in Sources */,
 				5A0067BC25E046EA00F2BC80 /* SceneDelegate.swift in Sources */,
 				5A43696125E086760025342F /* RocketCell.swift in Sources */,
 				5A1DB22225E055260078C40E /* RocketsRemoteRepository.swift in Sources */,

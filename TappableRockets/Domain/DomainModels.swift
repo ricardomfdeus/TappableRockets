@@ -19,6 +19,20 @@ public struct RocketItem {
     public let costPerLaunch: String?
     public let wikipedia: String?
     public let id: String
+    
+    public var badgeColor: UIColor {
+        guard let successRate = successRate else {
+            return .white
+        }
+        
+        if successRate >= 60 {
+            return .green
+        } else if successRate >= 30 {
+            return .orange
+        } else {
+            return .red
+        }
+    }
 }
 
 internal extension Rocket {
@@ -36,32 +50,6 @@ internal extension Rocket {
                           wikipedia: wikipedia,
                           id: id)
     }
-    
-    func downloadImage(with imageUrlString: String,
-                       completionHandler: @escaping (UIImage?, Bool) -> Void) {
-        
-        func handle(image: UIImage?) {
-            DispatchQueue.main.async {
-                completionHandler(image, image != nil)
-            }
-        }
-        
-        guard let url = URL(string: imageUrlString) else {
-            handle(image: nil)
-            return
-        }
-        
-        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            guard let data = data, error == nil else {
-                handle(image: nil)
-                return
-            }
-            handle(image: UIImage(data: data))
-        }
-        
-        task.resume()
-    }
-    
 }
 
 internal extension Sequence where Element == Rocket {

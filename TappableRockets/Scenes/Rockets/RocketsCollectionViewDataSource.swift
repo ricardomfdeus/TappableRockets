@@ -8,6 +8,12 @@
 import UIKit
 
 final class RocketsCollectionViewDataSource: NSObject {
+    
+    private enum Constants {
+        static let padding: CGFloat = 30
+        static let itemsHeight: CGFloat = 250
+    }
+    
     var rockets: [RocketItem]?
 }
 
@@ -25,12 +31,23 @@ extension RocketsCollectionViewDataSource: UICollectionViewDelegate {
 
 extension RocketsCollectionViewDataSource: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        0 //rockets.count ?? 0
+        rockets?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        //TODO: build cell
-        let cell: UICollectionViewCell = collectionView.dequeue(cellForItemAt: indexPath)
+        let cell: RocketCell = collectionView.dequeue(cellForItemAt: indexPath)
+        cell.item = rockets?[indexPath.item]
         return cell
+    }
+}
+
+//MARK: UICollectionViewDelegateFlowLayout
+
+extension RocketsCollectionViewDataSource: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let padding: CGFloat = Constants.padding
+        let collectionViewSize = collectionView.frame.size.width - padding
+        
+        return CGSize(width: collectionViewSize/2, height: Constants.itemsHeight)
     }
 }

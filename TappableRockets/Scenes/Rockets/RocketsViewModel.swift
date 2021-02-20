@@ -8,10 +8,6 @@
 import Foundation
 import Alamofire
 
-protocol RocketsListViewModelProtocol {
-    func fetchData()
-}
-
 class RocketsViewModel {
     
     private let repositoryManager = RocketsRepositoryManager()
@@ -25,7 +21,7 @@ class RocketsViewModel {
     var view: RocketsViewProtocol!
     
     func fetchRocketData() {
-        repositoryManager.fetchRockets(.updateCache) { [weak self] (result) in
+        repositoryManager.fetchRockets(.cache) { [weak self] (result) in
             switch result {
             case .success(let rockets):
                 self?.rockets = rockets
