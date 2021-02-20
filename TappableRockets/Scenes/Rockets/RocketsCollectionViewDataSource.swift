@@ -8,7 +8,7 @@
 import UIKit
 
 final class RocketsCollectionViewDataSource: NSObject {
-    var rockets: Rockets?
+    var rockets: [RocketItem]?
 }
 
 //MARK: UICollectionViewDelegate

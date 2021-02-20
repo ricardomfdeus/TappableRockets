@@ -14,7 +14,9 @@ protocol RocketsListViewModelProtocol {
 
 class RocketsViewModel {
     
-    var rockets: Rockets? {
+    private let repositoryManager = RocketsRepositoryManager()
+    
+    var rockets: [RocketItem]? {
         didSet {
             view.viewWillUpdateRockets()
         }
@@ -23,7 +25,7 @@ class RocketsViewModel {
     var view: RocketsViewProtocol!
     
     func fetchRocketData() {
-        RocketsRemoteRepository.fetchRockets { [weak self] (result) in
+        repositoryManager.fetchRockets(.updateCache) { [weak self] (result) in
             switch result {
             case .success(let rockets):
                 self?.rockets = rockets

@@ -8,8 +8,9 @@
 import Foundation
 import Alamofire
 
-public enum RepositoryError: Error {
+public enum RocketsErrors: Error {
     case unknown
+    case invalidId
 }
 
 public final class RocketsRemoteRepository {
@@ -18,7 +19,7 @@ public final class RocketsRemoteRepository {
     public static func fetchRockets(completion: @escaping (Result<Rockets, Error>) -> Void) {
         AF.request(rocketsUrlString).responseData { (jsonData) in
             guard let data = jsonData.data else {
-                completion(.failure(RepositoryError.unknown))
+                completion(.failure(RocketsErrors.unknown))
                 return
             }
             
