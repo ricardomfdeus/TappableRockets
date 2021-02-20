@@ -107,6 +107,7 @@
 				5A1DB21325E04F410078C40E /* Repositories */,
 				5AB28A0E25E04AB800564E25 /* Scenes */,
 				5A0067C225E046EA00F2BC80 /* TappableRockets.xcdatamodeld */,
+				5A0067BF25E046EA00F2BC80 /* Main.storyboard */,
 				5A0067C725E046EC00F2BC80 /* LaunchScreen.storyboard */,
 				5A0067CA25E046EC00F2BC80 /* Info.plist */,
 				5A0067B925E046EA00F2BC80 /* AppDelegate.swift */,
@@ -130,7 +131,6 @@
 		5A43695D25E0864B0025342F /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				5A0067BF25E046EA00F2BC80 /* Main.storyboard */,
 				5A43695F25E086760025342F /* RocketCell.swift */,
 				5A43696025E086760025342F /* RocketCell.xib */,
 			);

@@ -30,6 +30,11 @@ class RocketsViewController: UIViewController {
         collectionView.dataSource = collectionViewDataSource
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
     }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        collectionView.reloadData() //recalculate the cell sizes
+    }
 }
 
 //MARK: RocketsViewProtocol
@@ -38,7 +43,7 @@ extension RocketsViewController: RocketsViewProtocol {
     func viewWillUpdateRockets() {
         collectionViewDataSource.rockets = viewModel.rockets
         activityIndicator.stopAnimating()
-        collectionView.reloadSections(IndexSet(integer: 0)) //using this so that the reload is animated
+        collectionView.reloadData()
     }
     
     func viewDidFailToFetchData(with error: Error) {

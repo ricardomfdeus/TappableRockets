@@ -24,18 +24,18 @@
                                 <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PIY-xU-4oe">
-                                        <rect key="frame" x="5" y="5" width="190" height="137"/>
+                                        <rect key="frame" x="5" y="5" width="190" height="125"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eCU-se-oXr">
-                                                <rect key="frame" x="0.0" y="0.0" width="190" height="137"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="190" height="125"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="eCU-se-oXr" secondAttribute="height" multiplier="25:18" id="qXP-cR-2AN"/>
+                                                    <constraint firstAttribute="width" secondItem="eCU-se-oXr" secondAttribute="height" multiplier="25:18" priority="750" id="qXP-cR-2AN"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaA-B7-Cz4">
-                                        <rect key="frame" x="5" y="142" width="190" height="45"/>
+                                        <rect key="frame" x="5" y="130" width="190" height="45"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Falcon 1" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BZ-O4-eoW">
                                                 <rect key="frame" x="0.0" y="5" width="150" height="40"/>
@@ -47,7 +47,7 @@
                                                 <rect key="frame" x="150" y="5" width="40" height="40"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tE-Oq-Zgy">
-                                                        <rect key="frame" x="8" y="13" width="24.5" height="13.5"/>
+                                                        <rect key="frame" x="8" y="13.5" width="24.5" height="13.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -65,7 +65,7 @@
                                         <edgeInsets key="layoutMargins" top="5" left="0.0" bottom="0.0" right="0.0"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="rds-8T-7m0">
-                                        <rect key="frame" x="5" y="187" width="190" height="58"/>
+                                        <rect key="frame" x="5" y="175" width="190" height="70"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2006-03-24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHX-6r-cO4">
                                                 <rect key="frame" x="0.0" y="5" width="190" height="14.5"/>
@@ -85,6 +85,7 @@
                             <constraint firstAttribute="trailing" secondItem="IV2-sy-RfC" secondAttribute="trailing" id="EY8-6W-y66"/>
                             <constraint firstAttribute="bottom" secondItem="IV2-sy-RfC" secondAttribute="bottom" id="SzA-lC-Iy5"/>
                             <constraint firstItem="IV2-sy-RfC" firstAttribute="top" secondItem="QAd-4F-HVX" secondAttribute="top" id="r3Y-D6-nif"/>
+                            <constraint firstItem="eCU-se-oXr" firstAttribute="height" relation="lessThanOrEqual" secondItem="QAd-4F-HVX" secondAttribute="height" multiplier="0.5" id="tCS-1y-oFg"/>
                             <constraint firstItem="IV2-sy-RfC" firstAttribute="leading" secondItem="QAd-4F-HVX" secondAttribute="leading" id="zIy-iq-Tku"/>
                         </constraints>
                     </view>

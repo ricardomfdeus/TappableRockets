@@ -10,8 +10,9 @@ import UIKit
 final class RocketsCollectionViewDataSource: NSObject {
     
     private enum Constants {
-        static let padding: CGFloat = 30
+        static let padding: CGFloat = 24
         static let itemsHeight: CGFloat = 250
+        static let maxWidth: CGFloat = 200
     }
     
     var rockets: [RocketItem]?
@@ -45,9 +46,14 @@ extension RocketsCollectionViewDataSource: UICollectionViewDataSource {
 
 extension RocketsCollectionViewDataSource: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let padding: CGFloat = Constants.padding
-        let collectionViewSize = collectionView.frame.size.width - padding
+        let width = collectionView.frame.size.width - Constants.padding
+        var cellWidth = width/2
         
-        return CGSize(width: collectionViewSize/2, height: Constants.itemsHeight)
+        if cellWidth > Constants.maxWidth {
+            let fittingInWidth = (width/Constants.maxWidth).rounded(.down)
+            cellWidth = width/fittingInWidth
+        }
+        
+        return CGSize(width: cellWidth, height: Constants.itemsHeight)
     }
 }
