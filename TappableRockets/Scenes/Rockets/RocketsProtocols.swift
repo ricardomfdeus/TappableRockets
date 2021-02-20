@@ -14,3 +14,7 @@ protocol RocketsListViewModelProtocol {
     func fetchData()
 }
 
+protocol RocketsViewModelProtocol {
+    func fetchRocketData(update: Bool)
+}
+

@@ -19,9 +19,11 @@ class RocketsViewModel {
     }
     
     var view: RocketsViewProtocol!
-    
-    func fetchRocketData() {
-        repositoryManager.fetchRockets(.cache) { [weak self] (result) in
+}
+
+extension RocketsViewModel: RocketsViewModelProtocol {
+    func fetchRocketData(update: Bool) {
+        repositoryManager.fetchRockets(update ? .updateCache : .cache) { [weak self] (result) in
             switch result {
             case .success(let rockets):
                 self?.rockets = rockets

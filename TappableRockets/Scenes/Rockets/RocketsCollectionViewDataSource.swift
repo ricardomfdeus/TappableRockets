@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol RocketsCollectionViewDataSourceDelegate: class {
+    func didSelectItem(rocket: RocketItem)
+}
+
 final class RocketsCollectionViewDataSource: NSObject {
     
     private enum Constants {
@@ -16,6 +20,8 @@ final class RocketsCollectionViewDataSource: NSObject {
     }
     
     var rockets: [RocketItem]?
+    
+    weak var delegate: RocketsCollectionViewDataSourceDelegate?
 }
 
 //MARK: UICollectionViewDelegate
@@ -23,8 +29,7 @@ final class RocketsCollectionViewDataSource: NSObject {
 extension RocketsCollectionViewDataSource: UICollectionViewDelegate {
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let rocket = rockets?[indexPath.item] else { return }
-        print(rocket)
-        //TODO:
+        delegate?.didSelectItem(rocket: rocket)
     }
 }
 

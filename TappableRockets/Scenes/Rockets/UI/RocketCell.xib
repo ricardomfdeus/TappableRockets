@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -42,15 +42,21 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rr1-H8-lXR">
                                                 <rect key="frame" x="150" y="5" width="40" height="40"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tE-Oq-Zgy">
-                                                        <rect key="frame" x="8" y="13.5" width="24.5" height="13.5"/>
+                                                        <rect key="frame" x="4" y="11" width="32" height="18"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        </variation>
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
@@ -68,10 +74,13 @@
                                         <rect key="frame" x="5" y="175" width="190" height="70"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2006-03-24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IHX-6r-cO4">
-                                                <rect key="frame" x="0.0" y="5" width="190" height="14.5"/>
+                                                <rect key="frame" x="0.0" y="5" width="190" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
                                             </label>
                                         </subviews>
                                         <edgeInsets key="layoutMargins" top="5" left="0.0" bottom="0.0" right="0.0"/>
