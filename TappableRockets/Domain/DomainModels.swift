@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 public struct RocketItem {
-    public let imageUrl: String?
+    public let imageUrls: [String]?
     public let name: String?
     public let successRate: Int?
     public let firstFlight: Date?
@@ -39,7 +39,7 @@ internal extension Rocket {
     func asRocketItem() throws -> RocketItem {
         guard let id = id else { throw RocketsErrors.invalidId }
         
-        return RocketItem(imageUrl: flickrImages?.first,
+        return RocketItem(imageUrls: flickrImages,
                           name: name,
                           successRate: successRatePct,
                           firstFlight: firstFlight?.date(),

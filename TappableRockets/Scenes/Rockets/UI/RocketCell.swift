@@ -8,7 +8,7 @@
 import UIKit
 
 class RocketCell: UICollectionViewCell {
-
+    
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var rocketImage: UIImageView!
     @IBOutlet weak var rocketName: UILabel!
@@ -32,7 +32,7 @@ class RocketCell: UICollectionViewCell {
     }
     
     private func bindItem(_ item: RocketItem) {
-        if let urlString = item.imageUrl {
+        if let urlString = item.imageUrls?.first {
             rocketImage.loadImage(urlString: urlString)
         }
         

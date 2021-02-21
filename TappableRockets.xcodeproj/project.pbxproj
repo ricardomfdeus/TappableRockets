@@ -29,6 +29,10 @@
 		5A43698F25E169120025342F /* UIImageView+Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43698E25E169120025342F /* UIImageView+Cache.swift */; };
 		5A43699525E181190025342F /* RocketsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A43699425E181190025342F /* RocketsProtocols.swift */; };
 		5A4369AB25E1A6D80025342F /* RocketDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4369AA25E1A6D80025342F /* RocketDetail.swift */; };
+		5A4369AE25E2F7E20025342F /* ObservableImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4369AD25E2F7E20025342F /* ObservableImageLoader.swift */; };
+		5A4369B625E310D60025342F /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4369B525E310D60025342F /* PagingView.swift */; };
+		5A4369BA25E310F50025342F /* UrlImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4369B925E310F50025342F /* UrlImageView.swift */; };
+		5A4369BD25E3110B0025342F /* CornerRounding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4369BC25E3110B0025342F /* CornerRounding.swift */; };
 		5AB28A1425E04AD500564E25 /* RocketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB28A1025E04AD500564E25 /* RocketsViewController.swift */; };
 		5AB28A1525E04AD500564E25 /* RocketsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB28A1125E04AD500564E25 /* RocketsViewModel.swift */; };
 		5AF0889A25E06BD600944EDD /* UICollectionView+Dequeing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF0889925E06BD600944EDD /* UICollectionView+Dequeing.swift */; };
@@ -61,6 +65,10 @@
 		5A43698E25E169120025342F /* UIImageView+Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Cache.swift"; sourceTree = "<group>"; };
 		5A43699425E181190025342F /* RocketsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsProtocols.swift; sourceTree = "<group>"; };
 		5A4369AA25E1A6D80025342F /* RocketDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetail.swift; sourceTree = "<group>"; };
+		5A4369AD25E2F7E20025342F /* ObservableImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableImageLoader.swift; sourceTree = "<group>"; };
+		5A4369B525E310D60025342F /* PagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingView.swift; sourceTree = "<group>"; };
+		5A4369B925E310F50025342F /* UrlImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlImageView.swift; sourceTree = "<group>"; };
+		5A4369BC25E3110B0025342F /* CornerRounding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRounding.swift; sourceTree = "<group>"; };
 		5AB28A1025E04AD500564E25 /* RocketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsViewController.swift; sourceTree = "<group>"; };
 		5AB28A1125E04AD500564E25 /* RocketsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsViewModel.swift; sourceTree = "<group>"; };
 		5AF0889925E06BD600944EDD /* UICollectionView+Dequeing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Dequeing.swift"; sourceTree = "<group>"; };
@@ -161,8 +169,19 @@
 			isa = PBXGroup;
 			children = (
 				5A4369AA25E1A6D80025342F /* RocketDetail.swift */,
+				5A4369AD25E2F7E20025342F /* ObservableImageLoader.swift */,
 			);
 			path = "Rocket detail";
+			sourceTree = "<group>";
+		};
+		5A4369B425E310BD0025342F /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				5A4369B525E310D60025342F /* PagingView.swift */,
+				5A4369B925E310F50025342F /* UrlImageView.swift */,
+				5A4369BC25E3110B0025342F /* CornerRounding.swift */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 		5AB28A0E25E04AB800564E25 /* Scenes */ = {
@@ -189,6 +208,7 @@
 		5AF0889725E06BC000944EDD /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				5A4369B425E310BD0025342F /* SwiftUI */,
 				5AF0889825E06BC600944EDD /* Extensions */,
 			);
 			path = Common;
@@ -350,9 +370,13 @@
 				5A43698C25E168230025342F /* View+Rounding.swift in Sources */,
 				5A43696725E08C490025342F /* DomainModels.swift in Sources */,
 				5A43698F25E169120025342F /* UIImageView+Cache.swift in Sources */,
+				5A4369B625E310D60025342F /* PagingView.swift in Sources */,
 				5A0067BC25E046EA00F2BC80 /* SceneDelegate.swift in Sources */,
+				5A4369BA25E310F50025342F /* UrlImageView.swift in Sources */,
 				5A43696125E086760025342F /* RocketCell.swift in Sources */,
+				5A4369BD25E3110B0025342F /* CornerRounding.swift in Sources */,
 				5A1DB22225E055260078C40E /* RocketsRemoteRepository.swift in Sources */,
+				5A4369AE25E2F7E20025342F /* ObservableImageLoader.swift in Sources */,
 				5A43698325E158990025342F /* String+Date.swift in Sources */,
 				5AB28A1425E04AD500564E25 /* RocketsViewController.swift in Sources */,
 				5A1DB22625E05BAD0078C40E /* RocketsStorageRepository.swift in Sources */,

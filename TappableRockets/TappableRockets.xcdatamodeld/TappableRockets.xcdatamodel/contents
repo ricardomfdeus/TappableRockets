@@ -6,7 +6,7 @@
         <attribute name="country" optional="YES" attributeType="String"/>
         <attribute name="firstFlight" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" attributeType="String"/>
-        <attribute name="imageUrl" optional="YES" attributeType="String"/>
+        <attribute name="imageUrls" optional="YES" attributeType="Transformable"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="rocketDescription" optional="YES" attributeType="String"/>
         <attribute name="successRate" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES"/>

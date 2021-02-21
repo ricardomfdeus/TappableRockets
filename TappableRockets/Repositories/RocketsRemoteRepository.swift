@@ -15,7 +15,7 @@ public enum RocketsErrors: Error {
 
 public final class RocketsRemoteRepository {
     private static let rocketsUrlString = "https://api.spacexdata.com/v4/rockets"
-      
+    
     public static func fetchRockets(completion: @escaping (Result<Rockets, Error>) -> Void) {
         AF.request(rocketsUrlString).responseData { (jsonData) in
             guard let data = jsonData.data else {

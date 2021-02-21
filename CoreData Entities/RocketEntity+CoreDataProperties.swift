@@ -13,9 +13,9 @@ extension RocketEntity {
     @nonobjc public class func fetchRequest() -> NSFetchRequest<RocketEntity> {
         return NSFetchRequest<RocketEntity>(entityName: "RocketEntity")
     }
-
+    
     @NSManaged public var id: String
-    @NSManaged public var imageUrl: String?
+    @NSManaged public var imageUrls: [String]?
     @NSManaged public var name: String?
     @NSManaged public var successRate: Int32
     @NSManaged public var country: String?
@@ -28,7 +28,7 @@ extension RocketEntity {
 
 internal extension RocketEntity {
     func asRocketItem() -> RocketItem {
-        RocketItem(imageUrl: imageUrl,
+        RocketItem(imageUrls: imageUrls,
                    name: name,
                    successRate: Int(successRate),
                    firstFlight: firstFlight,

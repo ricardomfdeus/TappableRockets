@@ -55,7 +55,7 @@ internal extension RocketItem {
         if let rocketEntity = NSEntityDescription.insertNewObject(forEntityName: "RocketEntity",
                                                                   into: context) as? RocketEntity {
             rocketEntity.id = id
-            rocketEntity.imageUrl = imageUrl
+            rocketEntity.imageUrls = imageUrls
             rocketEntity.name = name
             rocketEntity.successRate = Int32(successRate ?? 0)
             rocketEntity.country = country

@@ -14,7 +14,9 @@ class RocketsViewController: UIViewController {
     
     private lazy var refreshControl: UIRefreshControl = {
         let rc = UIRefreshControl()
-        rc.tintColor = .lightGray
+        
+        updaterRefreshControlTint(refreshControl: rc)
+        
         rc.attributedTitle = NSAttributedString(string: "Pull to refresh the rockets",
                                                 attributes: [.foregroundColor : UIColor.lightGray,
                                                              .font : UIFont.systemFont(ofSize: 14)])
@@ -47,14 +49,17 @@ class RocketsViewController: UIViewController {
         collectionView.contentInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
     }
     
-    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        super.viewWillTransition(to: size, with: coordinator)
-        collectionView.reloadData() //recalculate the cell sizes
-    }
-    
     @objc
     private func didPullToRefresh(_ sender: Any) {
         viewModel.fetchRocketData(update: true)
+    }
+    
+    private func updaterRefreshControlTint(refreshControl: UIRefreshControl) {
+        if traitCollection.userInterfaceStyle == .dark {
+            refreshControl.tintColor = .white
+        } else {
+            refreshControl.tintColor = .lightGray
+        }
     }
 }
 
@@ -74,13 +79,29 @@ extension RocketsViewController: RocketsViewProtocol {
     }
 }
 
+//MARK: RocketsCollectionViewDataSourceDelegate
+
 extension RocketsViewController: RocketsCollectionViewDataSourceDelegate {
     func didSelectItem(rocket: RocketItem) {
-        var detail = RocketDetail()
-//        detail.rocket = rocket
-        
-        let vc = UIHostingController(rootView: detail)
-        
+        let vc = UIHostingController(rootView: RocketDetail(rocket: rocket))
         present(vc, animated: true, completion: nil)
+    }
+}
+
+//MARK: Trait collection
+
+extension RocketsViewController {
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        updaterRefreshControlTint(refreshControl: refreshControl)
+    }
+}
+
+//MARK: Orientation
+
+extension RocketsViewController {
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        collectionView.reloadData() //recalculate the cell sizes
     }
 }
